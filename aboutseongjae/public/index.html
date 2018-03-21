@@ -23,6 +23,13 @@
     font-family: "Roboto", sans-serif
   }
 </style>
+<script>
+  $(document).ready(function() {
+        $("button.picture").on("click", function() {
+          $("div.pictureModal").modal();
+        });
+      }
+</script>
 
 <body class="w3-white">
 
@@ -37,7 +44,7 @@
 
         <div class="w3-white w3-text-grey w3-card-4">
           <div class="w3-display-container">
-            <img src="../mainMe.jpeg" style="width:100%" alt="">
+            <img src="https://firebasestorage.googleapis.com/v0/b/aboutseongjae.appspot.com/o/mainMe.jpeg?alt=media&token=b1288310-5ace-4b57-9a9c-6ee0c021cfc6" style="width:100%" alt="">
             <div class="w3-display-bottomleft w3-container w3-text-black">
               <h2 class="w3-text-white">Seongjae Moon</h2>
             </div>
@@ -59,7 +66,7 @@
                 <div class="w3-center w3-text-white">80%</div>
               </div>
             </div>
-            <p>Javascript, jQuery, HTML5, CSS3</p>
+            <p>Javascript, jQuery, HTML5, CSS3, Bootstrap3</p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-yellow" style="width:75%">75%</div>
             </div>
@@ -105,7 +112,7 @@
           <div class="w3-container">
             <h5 class="w3-opacity"><b>(SIST) / Front End &amp; Back End web programming</b></h5>
             <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2017 - <span class="w3-tag w3-black w3-round">Current</span></h6>
-            <p>I am attending the training course of JAVA & Python application software developer at Ssangyong Education Center in Gangnam, and will be completed on June 1.</p>
+            <p>I am attending the training course of JAVA & Python application software developer at SSANGYONG education center in Gangnam, and will be completed on June 1.</p>
             <hr>
           </div>
           <div class="w3-container">
@@ -143,6 +150,9 @@
             <p>공간정보공학과 컴퓨터 소프트웨어학을 전공했습니다. 현재 JAVA와 Python을 주로 배우며 안드로이드, LBS, IoT 등에 관심을 가지고 있습니다. 항상 슈퍼문처럼 빛나는 인생을 꿈꾸며 살고 싶습니다!</p>
           </div>
         </div>
+        <br>
+        <button class="btn btn-default btn-lg picture" data-toggle="modal" data-target="#pictureModal">사진첩 </button>
+
         <!-- End Right Column -->
       </div>
 
@@ -153,11 +163,102 @@
   </div>
 
   <footer class="w3-container w3-black w3-center w3-margin-top">
-    <p>Copyright ⓒ 2018 All rights reserved by Seongjae Moon </p>
+    <p>Copyright ⓒ 2018 Seongjae Moon All rights reserved. </p>
     <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>-->
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </footer>
 
+  <div id="pictureModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">성재의 추억 돋는 사진첩입니다.</h4>
+        </div>
+        <div class="modal-body">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+              <li data-target="#myCarousel" data-slide-to="6"></li>
+              <li data-target="#myCarousel" data-slide-to="7"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aboutseongjae.appspot.com/o/withhj.jpeg?alt=media&token=3f37eebe-78b8-42fa-bbc3-2afa766a6aef" alt="withhj.jpeg" style="width: 100%;">
+                <div class="carousel-caption">
+                  <h4>현지랑 데이트~</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aboutseongjae.appspot.com/o/myprofile.jpeg?alt=media&token=36126d38-65b1-486c-883a-f72fcaef6590" alt="" style="width: 100%;">
+                <div class="carousel-caption">
+                  <h4>내 사진~</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aboutseongjae.appspot.com/o/myprofile2.jpeg?alt=media&token=d2aaf261-2744-4bd1-8a05-663ead5c135d" alt="" style="width: 100%;">
+                <div class="carousel-caption">
+                  <h4>또 내 사진~</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aboutseongjae.appspot.com/o/presentation.jpeg?alt=media&token=d9e09f70-db06-41d2-9395-e79a879b64a4" alt="" style="width: 100%;">
+                <div class="carousel-caption">
+                  <h4>떨리는 코드리뷰..!</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aboutseongjae.appspot.com/o/presentation2.jpeg?alt=media&token=5a2c13c1-df62-40b0-af26-71c0b0396020" alt="" style="width: 100%;">
+                <div class="carousel-caption">
+                  <h4>떨리는 발표..!</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aboutseongjae.appspot.com/o/withfriends2.jpeg?alt=media&token=09260af0-5951-4f01-9fdf-8ac1d44e1857" alt="" style="width: 100%;">
+                <div class="carousel-caption">
+                  <h4>여행은 좋지~</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aboutseongjae.appspot.com/o/withfriends5.jpeg?alt=media&token=b1c88194-2213-4547-ae5e-3a2b511edeb8" alt="" style="width: 100%;">
+                <div class="carousel-caption">
+                  <h4>좋은 친구들과~</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aboutseongjae.appspot.com/o/snakehouse.jpeg?alt=media&token=b3ac47c5-5c3d-4081-9202-8c24d6cc63d2" alt="" style="width: 100%;">
+                <div class="carousel-caption">
+                  <h4>좋은 친구들과~ (feat.뱀굴)</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span
+          class="glyphicon glyphicon-chevron-left"></span> <span
+          class="sr-only">Previous</span>
+        </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span
+          class="glyphicon glyphicon-chevron-right"></span> <span
+          class="sr-only">Next</span>
+        </a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 
 </html>
