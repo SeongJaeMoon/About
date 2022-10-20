@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.firebase-emulator-warning {
+    display: none !important;
+}

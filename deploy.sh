@@ -1,0 +1,1 @@
+sudo firebase deploy --only=hosting:seongjae-moon

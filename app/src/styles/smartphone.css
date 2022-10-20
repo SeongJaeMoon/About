@@ -1,0 +1,65 @@
+smartphone {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+}
+.smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+}
+.smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+}
+.smartphone .content {
+    width: 100%;
+    max-width: 300px;
+    height: 520px;
+    overflow: hidden;
+    overflow-y: auto;
+    background: white;
+}
+.smartphone .content * {
+    padding-left:5px;
+    padding-right:5px;
+}
+.smartphone .content > #content-wrap {
+    position: relative;
+    margin-top:5px;
+    margin-bottom:5px;
+    max-width: 300px;
+}
+.smartphone .content > #content-wrap img {
+    text-align: center;
+    display: inline-block;
+    min-width:100% !important;
+    max-width: 250px !important;
+    margin:0 auto !important;
+    height:auto !important;
+}
+::-webkit-scrollbar {width: 0}
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px transparent;border-radius:none}
+::-webkit-scrollbar-thumb {background: transparent;border-radius: none}
+::-webkit-scrollbar-thumb:hover {background: transparent}
